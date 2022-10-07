@@ -1,24 +1,20 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Layout } from '../components/Layouts'
 import conffeti from 'canvas-confetti';
-import { Avatar, Box, Button, Card, CardContent, CardHeader, Divider, Typography } from '@mui/material';
+import { Avatar, Box, Button, Card, CardContent, CardHeader, Divider, Link, Typography } from '@mui/material';
 import { red } from '@mui/material/colors';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import { CitaYise } from '../components/cita';
 import { NextPage } from 'next';
-
+import NextLink  from 'next/link';
 
 
 const citaPage:NextPage = () => {
 
-    // const [Message1, setMessage1] = useState(false);
-
-    // const [Message2, setMessage2] = useState(true);
-
+   
 
     const heandleClick2 = () =>{
-        // setMessage1(true)
-        // setMessage2(false)
+
      var colors = ['#bb0000', '#ffffff'];
 
      conffeti({
@@ -86,12 +82,22 @@ const citaPage:NextPage = () => {
             </Typography>
           </CardContent>
           
-          <Button onClick={  heandleClick2}  fullWidth  variant='contained' startIcon={<FavoriteIcon />} endIcon={ <FavoriteIcon />} className='btn-init' >
-           Continuar
-          </Button>
+          <NextLink href='/allmessage' >
+           
+             <Link>
+                <Button onClick={  heandleClick2}  fullWidth  variant='contained' startIcon={<FavoriteIcon />} endIcon={ <FavoriteIcon />} className='btn-init' >
+              Continuar
+              </Button>
+             </Link>
+              
+          </NextLink>
+          
+
         </Card>
         </Box>
             
+       
+
 
      </Layout>
   )
