@@ -88,14 +88,14 @@ export const CitaYise = () => {
               </Avatar>
             }
             title=""
-            subheader="Martes 4, 2022"
+            subheader="Jueves 6, 2022"
           />
           <CardContent>
             <Typography mb={2} variant="body2" color="text.secondary">
-              He intentdado escribir ciertas cosas y sigo buscando las palabras que describan lo que siento , es que 
+              He intentado escribir ciertas cosas y sigo buscando las palabras que describan lo que siento , y es que 
             </Typography>
             <Typography mb={2} variant="body2" color="text.secondary">
-             me hes imposible articular todo lo que pienso y siento y como explicar que muero cada dia por las ganas de verte
+             me hes imposible articular todo lo que pienso  y como explicar que muero cada dia por las ganas de verte.
             </Typography>
             <Divider />
             <Typography  mt={2} variant="body2" color="text.secondary">
@@ -161,10 +161,10 @@ export const CitaYise = () => {
           </CardContent>
        
 
-         <Box display='flex' >
+         <Box display='flex' padding={2} >
 
      <Button    variant='contained' className='btn-init' onClick={handleClickOpen}>
-       No
+       No acepto
       </Button>
       <Dialog
         open={open}
@@ -192,7 +192,7 @@ export const CitaYise = () => {
           
           <Box flex={1} />
 
-          <NextLink href='/'  > 
+          <NextLink href='/listUs'  > 
             <Link>
             <Button   variant='contained'  className='btn-init' >
             Acepto
