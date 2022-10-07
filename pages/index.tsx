@@ -1,4 +1,4 @@
-import { Avatar, Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Grid, IconButton, Typography, useTheme } from '@mui/material'
+import { Avatar, Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Divider, Grid, IconButton, Link, Typography, useTheme } from '@mui/material'
 import type { NextPage } from 'next'
 import conffeti from 'canvas-confetti';
 import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
@@ -8,10 +8,16 @@ import { useMemo, useState } from 'react';
 import { red } from '@mui/material/colors';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import FavoriteIcon from '@mui/icons-material/Favorite';
-import { CardJuego } from '../components/y-card/CardJuego';
+import NextLink  from 'next/link';
+
+import { Layout } from '../components/Layouts';
+import { CardJuego } from '../components/cards';
+
 
 
 const Home: NextPage = () => {
+
+ 
 
    const [Message, setMessage] = useState(false);
 
@@ -30,7 +36,7 @@ const Home: NextPage = () => {
 
   const theme = useTheme();
 
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -45,55 +51,99 @@ const Home: NextPage = () => {
 
   return (
     
-    
-    <Box>
+    <Layout>
+      
+      <Box>
 
-     {
-       
-       Message
-       ?(
-            <CardJuego />
-         )
-         :(
-          
-          
-        <Box 
-        display='flex'
-        alignItems='center'
-        justifyContent='center' 
-        marginTop={20}
-        padding='0px 10px'
-         >
-         <Card sx={{ display: 'flex' }}>
-           <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-             <CardContent sx={{ flex: '1 0 auto' }}>
-               <Typography component="div" variant="h5">
-                   Para ti
-               </Typography>
-               <Typography variant="subtitle1" color="text.secondary" component="div">
-                Yisel Aleman
-               </Typography>
-             </CardContent>
-             <Box sx={{ display: 'flex', alignItems: 'center', pl: 1, pb: 1, pr:1 }}>
-               <Button  onClick={heanledClick} variant='contained' startIcon={<FavoriteIcon />} endIcon={ <FavoriteIcon />} className='btn-init' >
-                 Haz Click
-               </Button>
-             </Box>
-           </Box>
-           <CardMedia
-             component="img"
-             sx={{ width: 151 }}
-             image="/love.jpg"
-             alt="Live from space album cover"
-           />
-         </Card>
-         </Box>
-           
-        )
-           
-      }
+{
+  
+  Message
+  ?(
+       <CardJuego />
+    )
+    :(
+     
+      <>
 
-    </Box>
+      <Typography fontWeight={600} fontSize={25} > Lista ! </Typography>
+
+      <Box 
+            display='flex'
+            alignItems='center'
+            justifyContent='center' 
+            marginTop={10}
+            padding='0px 10px'
+            >
+            
+            <Card sx={{ maxWidth: 345 }}>
+          <CardHeader
+            avatar={
+              <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
+                DR
+              </Avatar>
+            }
+            title=""
+            subheader="Jueves 6, 2022"
+          />
+          <CardContent>
+            <Typography mb={2} variant="body2" color="text.secondary">
+              Hola yise, bueno acontinuacion veraz lo que tengo para ti, espero que te guste y que me prometas que lo consideraras, por favor dame un respuesta.
+            </Typography>
+            <Divider />
+            <Typography mt={2} variant="body2" color="text.secondary">
+              Bueno no me queda mas que decir que puedes empezar
+            </Typography>
+          </CardContent>
+          
+          {/* <Button onClick={  heanledClick }  fullWidth  variant='contained' startIcon={<FavoriteIcon />} endIcon={ <FavoriteIcon />} className='btn-init' >
+            ver mensaje
+          </Button>  */}
+
+      <Button  fullWidth  variant='contained' className='btn-init' onClick={handleClickOpen}>
+       Empezar
+      </Button>
+      <Dialog
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="alert-dialog-title"
+        aria-describedby="alert-dialog-description"
+      >
+        <DialogTitle id="alert-dialog-title">
+          {"Terminos y Condiciones"}
+        </DialogTitle>
+        <DialogContent>
+          <DialogContentText id="alert-dialog-description">
+            Ok acontinuacion podras ver lo que he preparado para ti, pero, antes debes aceptar mis terminos y condiciones, son simples, dame la oportunidad.
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+
+        <NextLink href='/cita'  > 
+            <Link>
+            <Button   fullWidth  variant='contained'  className='btn-init' >
+            Acepto
+            </Button> 
+            </Link>
+        </NextLink>
+
+        </DialogActions>
+      </Dialog>
+
+        </Card>
+        </Box>
+      
+      </>
+      
+     
+      
+    )
+      
+ }
+
+</Box>
+
+    </Layout>
+  
 
   )
 }
