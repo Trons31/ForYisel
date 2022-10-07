@@ -5,10 +5,11 @@ import { Avatar, Box, Button, Card, CardContent, CardHeader, Divider, Typography
 import { red } from '@mui/material/colors';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import { CitaYise } from '../components/cita';
+import { NextPage } from 'next';
 
 
 
-const citaPage = () => {
+const citaPage:NextPage = () => {
 
     const [Message1, setMessage1] = useState(false);
 
