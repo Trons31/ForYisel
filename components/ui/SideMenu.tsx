@@ -9,7 +9,7 @@ export const SideMenu = () => {
 
 
   const [SideMenu, setSideMenu] = useState(false);
-  const [CerrarSideMenu, setCerrarSideMenu] = useState(false);
+
 
 
   return (

@@ -14,7 +14,6 @@ const citaPage = () => {
 
     const [Message2, setMessage2] = useState(true);
 
-    const [Message3, setMessage3] = useState(false);
 
     const heandleClick2 = () =>{
         setMessage1(true)

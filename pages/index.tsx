@@ -21,20 +21,9 @@ const Home: NextPage = () => {
 
    const [Message, setMessage] = useState(false);
 
-   const heanledClick = () => {
-    setMessage(true);
-    
-    var colors = ['#bb0000', '#ffffff'];
-    conffeti({
-      particleCount: 100,
-      spread: 70,
-      origin: { y: 0.6 },
-      colors: colors
-    });
+   
 
-   }
-
-  const theme = useTheme();
+ 
 
   const [open, setOpen] = useState(false);
 
