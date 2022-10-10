@@ -85,7 +85,7 @@ const listUs = () => {
         
     </List>
 
-  <Typography mt={5} fontWeight={600} > Sabia que dirias que si.</Typography>
+
 
   <Card sx={{ maxWidth: 345 }}>
       <CardHeader

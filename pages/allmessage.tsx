@@ -7,7 +7,7 @@ const allmessage = () => {
    
      <Layout>
 
-      <CitaYise />
+      
 
      </Layout>
   )

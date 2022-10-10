@@ -14,6 +14,8 @@ import { Layout } from '../components/Layouts';
 import { CardJuego } from '../components/cards';
 import ReactAudioPlayer from 'react-audio-player';
 import { truncate } from 'fs';
+import Cita from '../components/cards/Cita';
+
 
 
 
@@ -23,6 +25,7 @@ const Home: NextPage = () => {
 
 
   const [open, setOpen] = useState(true);
+  const [WordM, setWordM] = useState(false)
 
   const handleClickOpen = () => {
 
@@ -31,7 +34,7 @@ const Home: NextPage = () => {
 
         conffeti({
             zIndex: 999,
-            particleCount: 1000,
+            particleCount: 500,
             spread: 160,
             angle: -100,
             origin: {
@@ -42,7 +45,7 @@ const Home: NextPage = () => {
 
           conffeti({
             zIndex: 999,
-            particleCount: 1000,
+            particleCount: 500,
             spread: 160,
             angle: -100,
             origin: {
@@ -101,52 +104,78 @@ const Home: NextPage = () => {
                   </Avatar>
                 }
                 title="Con cariño para ti"
-                subheader="Domingo 9 de octubre"
+                subheader="Lunes 10 de octubre"
               />
                 <CardContent>
                 <Typography variant="body2" color="text.secondary">
-                 <strong>Hermosa señorita</strong> de <strong>ojos encantadores</strong> me permitiria pedirle amablamente y con todo el respeto que lea este lindo mensaje.
+                 <strong>Hermosa señorita</strong> de <strong>ojos encantadores</strong>, bella dama de porte elegante, espero te guste.
                 </Typography>
 
                 <Typography mt={5} variant="body2" color="text.secondary">
-                - Nunca pierdas la alegria de vivir, de compartir, de amar y de ser feliz, levanta  la mirada y confia en que todo saldra bien, y por si lo olvidas aqui estare para recordarte que al final todo estara bien.
+                - <strong>Y</strong> entonces te das cuenta que existe alguien que es capaz de hacer sentir en las estrellas aun con los pies en la tierra.
                 </Typography>
-                <Typography mt={2} variant="body2" color="text.secondary">
-                 - Sabes tu sonrisa solo demora unos segundos o tal vez minutos, pero su efecto a durado toda mi vida.
+                <Typography mt={1} ml={1} variant="body2" color="text.secondary">
+                - <strong>I</strong>nolvidable es tu sonrisa aun que pocas veces la comtemple iluminaron mis ojos cada una de ellas. 
+                </Typography>
+
+                <Typography mt={1} ml={2} variant="body2" color="text.secondary">
+                - <strong>S</strong>onrie haces que el mundo se vea mas bonito   <FavoriteIcon fontSize='small' sx={{ color:'red' }} />
+                </Typography>
+
+                <Typography mt={1} ml={3} variant="body2" color="text.secondary">
+                - <strong>E</strong>s cierto ME GUSTAS, es lo mas cierto en este momento y si solo pudiera hacer algo desearia verte.
+                </Typography>
+                <Typography mt={1} ml={4} variant="body2" color="text.secondary">
+                - <strong>L</strong>o unico que tengo claro esque realmente quiero que seas tu.
+                </Typography>
+
+
+                <Typography mt={4} variant="body2" color="text.secondary">
+                 Sonrie haces que el mundo se vas mas bonito 
                 </Typography>
               </CardContent>
 
             </Card>
         </Box>
 
+        <Card sx={{ mt:5 }}>
+          <Box sx={{ display: 'flex', }}>
+            <CardContent sx={{ flex: '1 0 auto' }}>
+              <Typography component="div" variant="subtitle1">
+                Esta es especial para ti.
+              </Typography>
+              </CardContent>
+            </Box>
+        </Card>
+
         <Box
         display='flex'
         justifyContent='center'
-        mt={5}
+        mt={1}
         >
             <Card >
           <Box sx={{ display: 'flex', }}>
             <CardContent sx={{ flex: '1 0 auto' }}>
               <Typography component="div" variant="h5">
-                Mi heart
+                Con Cariño
               </Typography>
               <Typography variant="subtitle1" color="text.secondary" component="div">
                 Tu admirador #1
-              </Typography>
+                </Typography>
             </CardContent>
           
         
           <CardMedia
             component="img"
             sx={{ width: 120 }}
-            image="/love.jpg"
+            image="/perfect.jpg"
             alt="Live from space album cover"
           />
         </Box>
 
           <Box sx={{ display: 'flex',ml:1,mt:1,mb:1  }}  padding='0px 1px' width='96%' >
                 <ReactAudioPlayer
-                  src="/just.mp3"
+                  src="/perfect.mp3"
                   controls
                 />
             </Box>
@@ -154,12 +183,13 @@ const Home: NextPage = () => {
         </Card>
       </Box>
 
-        <Button sx={{ mt:2 }}>
-            Ver letra
-        </Button>
+       <Cita />
+       
         </>
       )
     }
+
+    
 
     </Layout>
   
