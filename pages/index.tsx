@@ -111,27 +111,12 @@ const Home: NextPage = () => {
                  <strong>Hermosa señorita</strong> de <strong>ojos encantadores</strong>, bella dama de porte elegante, espero te guste.
                 </Typography>
 
-                <Typography mt={5} variant="body2" color="text.secondary">
-                - <strong>Y</strong> entonces te das cuenta que existe alguien que es capaz de hacer sentir en las estrellas aun con los pies en la tierra.
-                </Typography>
-                <Typography mt={1} ml={1} variant="body2" color="text.secondary">
-                - <strong>I</strong>nolvidable es tu sonrisa aun que pocas veces la comtemple iluminaron mis ojos cada una de ellas. 
-                </Typography>
-
-                <Typography mt={1} ml={2} variant="body2" color="text.secondary">
-                - <strong>S</strong>onrie haces que el mundo se vea mas bonito   <FavoriteIcon fontSize='small' sx={{ color:'red' }} />
-                </Typography>
-
-                <Typography mt={1} ml={3} variant="body2" color="text.secondary">
-                - <strong>E</strong>s cierto ME GUSTAS, es lo mas cierto en este momento y si solo pudiera hacer algo desearia verte.
-                </Typography>
-                <Typography mt={1} ml={4} variant="body2" color="text.secondary">
-                - <strong>L</strong>o unico que tengo claro esque realmente quiero que seas tu.
-                </Typography>
-
-
                 <Typography mt={4} variant="body2" color="text.secondary">
-                 Sonrie haces que el mundo se vas mas bonito 
+                  Quiero verte, platicar, reirnos juntos, contarte las mil y un cosas que me han pasado. caminar a tu lado por la calle, comernos un helado, escribirte algo lindo en la servilleta y si estoy de suerte... detener el tiempo, seria ese mi lugar seguro.
+                </Typography>
+                      
+                <Typography mt={4} variant="body2" color="text.secondary">
+                 Sonrie haces que el mundo se vea mas bonito 
                 </Typography>
               </CardContent>
 
