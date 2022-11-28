@@ -1,8 +1,14 @@
-import { AppBar, Box, Link, Toolbar, Typography } from "@mui/material"
+import { AppBar, Box, IconButton, Link, Toolbar, Typography } from "@mui/material"
 import NextLink  from 'next/link';
 import { SideMenu } from "./SideMenu";
+import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
+import { useContext } from "react";
+import { UiContext } from '../../context/ui/UiContext';
 
 export const Navbar = () => {
+
+   const {MenuOpen} = useContext(UiContext)
+
   return (
     <AppBar>{/* Siempre que definamos un NAVBAR nuestra primera propiedad sera AppBar de Material Ui */}
     <Toolbar> {/*Definimos el tollbar para nuestro Navbar */}
@@ -21,7 +27,16 @@ export const Navbar = () => {
 
         <Box flex={1} />
 
-        <SideMenu />
+        <IconButton
+        size='large'
+        edge='start'
+        onClick={MenuOpen}
+        >
+           <MenuOutlinedIcon />
+        </IconButton> 
+        
+
+           
 
        </Toolbar> 
      </AppBar>  

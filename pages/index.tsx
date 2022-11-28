@@ -104,16 +104,13 @@ const Home: NextPage = () => {
                   </Avatar>
                 }
                 title="Con cariño para ti"
-                subheader="Lunes 10 de octubre"
+                subheader="Lunes 28 de Noviembre"
               />
                 <CardContent>
                 <Typography variant="body2" color="text.secondary">
-                 <strong>Hermosa señorita</strong> de <strong>ojos encantadores</strong>, bella dama de porte elegante, espero te guste.
+                 <strong>Hola señorita</strong> de <strong>ojos encantadores</strong>, espero que estes muy bien, espero que todo vaya bien..... 
                 </Typography>
 
-                <Typography mt={4} variant="body2" color="text.secondary">
-                  Quiero verte, platicar, reirnos juntos, contarte las mil y un cosas que me han pasado. caminar a tu lado por la calle, comernos un helado, escribirte algo lindo en la servilleta y si estoy de suerte... detener el tiempo, seria ese mi lugar seguro.
-                </Typography>
                       
                 <Typography mt={4} variant="body2" color="text.secondary">
                  Sonrie haces que el mundo se vea mas bonito 
@@ -123,11 +120,12 @@ const Home: NextPage = () => {
             </Card>
         </Box>
 
+        
         <Card sx={{ mt:5 }}>
-          <Box sx={{ display: 'flex', }}>
+          <Box sx={{ display: 'flex', }}  >
             <CardContent sx={{ flex: '1 0 auto' }}>
               <Typography component="div" variant="subtitle1">
-                Esta es especial para ti.
+                Esta es especial.
               </Typography>
               </CardContent>
             </Box>
@@ -153,14 +151,14 @@ const Home: NextPage = () => {
           <CardMedia
             component="img"
             sx={{ width: 120 }}
-            image="/perfect.jpg"
+            image="/1.jpg"
             alt="Live from space album cover"
           />
         </Box>
 
           <Box sx={{ display: 'flex',ml:1,mt:1,mb:1  }}  padding='0px 1px' width='96%' >
                 <ReactAudioPlayer
-                  src="/perfect.mp3"
+                  src="/y.mp3"
                   controls
                 />
             </Box>
