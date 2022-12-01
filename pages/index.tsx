@@ -108,9 +108,18 @@ const Home: NextPage = () => {
               />
                 <CardContent>
                 <Typography variant="body2" color="text.secondary">
-                 <strong>Hola señorita</strong> de <strong>ojos encantadores</strong>, espero que estes muy bien, espero que todo vaya bien..... 
+                 <strong>Hola señorita</strong> de <strong>ojos encantadores</strong>.
                 </Typography>
-
+                     
+                <Typography sx={{my:2}} >cuando no puedas abrir una puerta
+                recuerda que no siempre está equivocada la llave,
+                que, a veces, lo está la cerradura,
+                o quizá estás intentando abrir la puerta equivocada.
+                No escuches demasiado a quien no permita que te caigas.
+                No hay golpe más duro que vivir intacto,
+                que quedarse sin heridas.
+                Y no olvides que quien más te quiere
+                también puede estar equivocado</Typography>     
                       
                 <Typography mt={4} variant="body2" color="text.secondary">
                  Sonrie haces que el mundo se vea mas bonito 
