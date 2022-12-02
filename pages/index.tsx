@@ -111,15 +111,29 @@ const Home: NextPage = () => {
                  <strong>Hola señorita</strong> de <strong>ojos encantadores</strong>.
                 </Typography>
                      
-                <Typography sx={{my:2}} >cuando no puedas abrir una puerta
-                recuerda que no siempre está equivocada la llave,
-                que, a veces, lo está la cerradura,
-                o quizá estás intentando abrir la puerta equivocada.
-                No escuches demasiado a quien no permita que te caigas.
-                No hay golpe más duro que vivir intacto,
-                que quedarse sin heridas.
-                Y no olvides que quien más te quiere
-                también puede estar equivocado</Typography>     
+                <Typography sx={{my:2}} >Me dicen que es de tontos
+                tropezar tres veces en la misma piedra
+                pero es que tú eras una piedra
+                sobre la que merecía la pena caer,
+                resbalarse,
+                hacerse herida.
+                Porque hay personas que merecen nuestra herida
+                las que mancharon todo de felicidad,
+                y contrataron la alegría
+                y la volcaron sobre ti
+                como quien te arroja un cubo de esperanza,
+                personas que empapaban tu vida con tu risa
+                y ahora que no están no dejan cuerda de tender
+                donde seque esta tristeza.
+                Me dicen que es de tontos,
+                que lo deje,
+                porque huir del compromiso
+                es el deporte que practican.
+                Y tal vez estén en lo cierto
+                pero no saben que tu boca
+                es el ticket de entrada al paraíso,
+                como la esperanza ante la adversidad.
+                Como tu sonrisa ante mis tristezas</Typography>     
                       
                 <Typography mt={4} variant="body2" color="text.secondary">
                  Sonrie haces que el mundo se vea mas bonito 
